@@ -15,11 +15,11 @@ $(function() {
 	});
 
 	/*CSS Animation Qjs*/
-	$(".header_sliders h1").animated("fadeInRight");
-	$(".header_sliders h2").animated("fadeInLeft");
-	$(".header_sliders h3").animated("fadeInLeft");
-	$(".header_sliders .explore_btn").animated("bounceInUp");
-	$(".header_sliders .purchase_btn").animated("bounceInUp");
+	// $(".header_sliders h1").animated("fadeInRight");
+	// $(".header_sliders h2").animated("fadeInLeft");
+	// $(".header_sliders h3").animated("fadeInLeft");
+	// $(".header_sliders .explore_btn").animated("bounceInUp");
+	// $(".header_sliders .purchase_btn").animated("bounceInUp");
 	$(".common_sect h2").animated("flipInX");
 	
 
