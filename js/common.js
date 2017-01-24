@@ -14,6 +14,10 @@ $(function() {
 		$("html, body").animate({ scrollTop: $(".creative_features").height()+500 }, "slow");
 	});
 
+	$("#Service").click(function(){
+		$("html, body").animate({ scrollTop: $(".service_slider").height()+2000 }, "slow");
+	});
+
 	/*CSS Animation Qjs*/
 	$(".header_sliders h1").animated("fadeInRight");
 	$(".header_sliders h2").animated("fadeInLeft");
