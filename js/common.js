@@ -20,26 +20,14 @@ $(function() {
 	$(".header_sliders h3").animated("fadeInLeft");
 	$(".header_sliders .explore_btn").animated("bounceInUp");
 	$(".header_sliders .purchase_btn").animated("bounceInUp");
-	$(".four_option .option_1").animated("flipInX");
-	$(".four_option .option_2").animated("flipInX");
-	$(".four_option .option_3").animated("flipInX");
-	$(".four_option .option_4").animated("flipInX");
-	$(".common_sect h2").animated("flipInX");
+	$(".four_option .option_1").animated("zoomIn");
+	$(".four_option .option_2").animated("zoomIn");
+	$(".four_option .option_3").animated("zoomIn");
+	$(".four_option .option_4").animated("zoomIn");
+	$(".common_sect h2").animated("fadeInLeft");
 	
 
 	/*SCRIPT START Одиночное появление с добавлениеm классов*/
-	// $(".four_option").waypoint(function(){
-	// 	$(".four_option .option").each(function(index) {
-	// 		var ths = $(this);
-	// 		setInterval(function(){
-	// 				ths.addClass("on");		
-	// 		}, 300*index);
-			
-	// 	});
-		
-	// }, {
-	// 	offset : "500"
-	// });
 
 	$(".features_items").waypoint(function(){
 		$(".features_items .features_item").each(function(index) {
@@ -55,9 +43,11 @@ $(function() {
 	});
 
 	/*Карусель Слайдов*/
-	$("").owlCarousel({
+	$(".service_slider").owlCarousel({
 		items : 1,
-		loop : true,
+		// loop : true,
+		autoplay: true,
+		URLhashListener:true,
 		autoplaySpeed : 1200,
 		navSpeed : 1200,
 		dotsSpeed : 1200,
@@ -66,6 +56,7 @@ $(function() {
 
 	/*jQuery Simple Equal Heights*/
 	// $('.four_option .option').equalHeights();
+	$(".service_menu a").equalHeights();
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -79,6 +70,11 @@ $(function() {
 		event.preventDefault();
 		// alert ("Work")
 	});
+
+	// $(".service_menu a").click(function(){
+	// 	event.preventDefault();
+	// 	// alert ("Work")
+	// });
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
