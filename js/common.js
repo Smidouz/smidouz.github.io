@@ -6,24 +6,12 @@ $(function() {
 	});
 
 	/*Scroll Function*/
-	$("#Features").click(function(){
-		$("html, body").animate({ scrollTop: $(".creative_features").height()+500 }, "slow");
-	});
 
 	$(".header_sliders .explore_btn").click(function(){
 		$("html, body").animate({ scrollTop: $(".creative_features").height()+500 }, "slow");
 	});
 
-	$("#Service").click(function(){
-		$("html, body").animate({ scrollTop: $(".service_slider").height()+2000 }, "slow");
-	});
-
 	/*CSS Animation Qjs*/
-	$(".header_sliders h1").animated("fadeInRight");
-	$(".header_sliders h2").animated("fadeInLeft");
-	$(".header_sliders h3").animated("fadeInLeft");
-	$(".header_sliders .explore_btn").animated("bounceInUp");
-	$(".header_sliders .purchase_btn").animated("bounceInUp");
 	$(".four_option .option_1").animated("zoomIn");
 	$(".four_option .option_2").animated("zoomIn");
 	$(".four_option .option_3").animated("zoomIn");
@@ -59,7 +47,6 @@ $(function() {
 	});
 
 	/*jQuery Simple Equal Heights*/
-	// $('.four_option .option').equalHeights();
 	$(".service_menu a").equalHeights();
 
 	//SVG Fallback
@@ -75,10 +62,15 @@ $(function() {
 		// alert ("Work")
 	});
 
-	// $(".service_menu a").click(function(){
-	// 	event.preventDefault();
-	// 	// alert ("Work")
-	// });
+
+	/*для всех якорей на сайте, плавный переход*/
+	$(document).ready(function() {
+		$('a[href^="#"]').click(function(){
+			var el = $(this).attr('href');
+			$('body').animate({ scrollTop: $(el).offset().top}, 800);
+			return false;
+			});
+	});
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
