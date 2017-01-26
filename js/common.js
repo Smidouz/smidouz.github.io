@@ -7,16 +7,21 @@ $(function() {
 
 	/*Scroll Function*/
 
-	$(".header_sliders .explore_btn").click(function(){
-		$("html, body").animate({ scrollTop: $(".creative_features").height()+500 }, "slow");
-	});
+	// $(".header_sliders .explore_btn").click(function(){
+	// 	$("html, body").animate({ scrollTop: $(".creative_features").height()+500 }, "slow");
+	// });
 
 	/*CSS Animation Qjs*/
+	$(".header_sliders h1").animated("fadeInLeft");
+	$(".header_sliders h2").animated("fadeInRight");
+	$(".header_sliders h3").animated("fadeInRight");
+	$(".header_sliders .explore_btn").animated("fadeInUpBig");
+	$(".header_sliders .purchase_btn").animated("fadeInUpBig");
 	$(".four_option .option_1").animated("zoomIn");
 	$(".four_option .option_2").animated("zoomIn");
 	$(".four_option .option_3").animated("zoomIn");
 	$(".four_option .option_4").animated("zoomIn");
-	// $(".common_sect h2").animated("fadeInLeft");
+	$(".section_service").animated("zoomInUp");
 	
 
 	/*SCRIPT START Одиночное появление с добавлениеm классов*/
@@ -37,8 +42,6 @@ $(function() {
 	/*Карусель Слайдов*/
 	$(".service_slider").owlCarousel({
 		items : 1,
-		// loop : true,
-		// autoplay: true,
 		URLhashListener:true,
 		autoplaySpeed : 1200,
 		navSpeed : 1200,
@@ -49,11 +52,6 @@ $(function() {
 	$(".work_slider").owlCarousel({
 		items : 1,
 		nav : true,
-		// loop : true,
-		// autoplay: true,
-		// URLhashListener:true,
-		// center : true,
-		// margin : -20,
 		autoplaySpeed : 1200,
 		navSpeed : 1200,
 		dotsSpeed : 1200,
@@ -76,6 +74,11 @@ $(function() {
 		// alert ("Work")
 	});
 
+	$(".button_slider a").click(function(){
+		event.preventDefault();
+		// alert ("Work")
+	});
+
 	$(".work_menu_wrap a").click(function(){
 		event.preventDefault();
 		// alert ("Work")
@@ -93,6 +96,11 @@ $(function() {
     	enabled:true
   	}
 	});
+
+	// $(".purchase_btn").magnificPopup({
+ //  	type: 'inline',
+ //  	mainClass: 'mfp-forms'
+	// });
 
 
 	/*для всех якорей на сайте, плавный переход*/
