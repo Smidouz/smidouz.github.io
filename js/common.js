@@ -69,10 +69,10 @@ $(function() {
 	};
 
 	/*Отмена событий перехода по ссылке*/
-	$(".main_menu a").click(function(){
-		event.preventDefault();
-		// alert ("Work")
-	});
+	// $(".main_menu a").click(function(){
+	// 	event.preventDefault();
+	// 	// alert ("Work")
+	// });
 
 	$(".button_slider a").click(function(){
 		event.preventDefault();
@@ -96,11 +96,11 @@ $(function() {
     	enabled:true
   	}
 	});
-
-	// $(".purchase_btn").magnificPopup({
- //  	type: 'inline',
- //  	mainClass: 'mfp-forms'
-	// });
+	/*Form MagnificPopup*/
+	$(".purchase_btn").magnificPopup({
+  	type: 'inline',
+  	mainClass: 'mfp-forms'
+	});
 
 
 	/*для всех якорей на сайте, плавный переход*/
@@ -114,7 +114,7 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
+	$("#callback").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
@@ -132,5 +132,7 @@ $(function() {
 
 });
 
-/*Lightbox gallery*/
+
+
+
 

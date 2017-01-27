@@ -1,5 +1,26 @@
 <?php
 
+/*Script Form Call Back*/
+$frm_name  = "Youname";
+$recepient = "klabukovmaksim@gmail.com";
+$sitename  = "https://smidouz.github.io";
+$subject   = "Новая заявка с сайта \"$sitename\"";
+
+$name = trim($_POST["name"]);
+$phone = trim($_POST["phone"]);
+$email = trim($_POST["email"]);
+// $formname = trim($_POST["formname"]);
+
+$message = "
+Имя: $name <br>
+Телефон: $phone <br>
+Почта: $email
+";
+
+mail($recepient, $subject, $message, "From: $frm_name <$email>" . "\r\n" . "Reply-To: $email" . "\r\n" . "X-Mailer: PHP/" . phpversion() . "\r\n" . "Content-type: text/html; charset=\"utf-8\"");
+
+/*Finish*/
+
 $method = $_SERVER['REQUEST_METHOD'];
 
 //Script Foreach
