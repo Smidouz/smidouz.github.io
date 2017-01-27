@@ -6,9 +6,9 @@ $recepient = "klabukovmaksim@gmail.com";
 $sitename  = "https://smidouz.github.io";
 $subject   = "Новая заявка с сайта \"$sitename\"";
 
-$name = trim($_POST["name"]);
-$phone = trim($_POST["phone"]);
-$email = trim($_POST["email"]);
+$name = trim($_GET["name"]);
+$phone = trim($_GET["phone"]);
+$email = trim($_GET["email"]);
 // $formname = trim($_POST["formname"]);
 
 $message = "
