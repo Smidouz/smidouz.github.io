@@ -74,10 +74,10 @@ $(function() {
 	// 	// alert ("Work")
 	// });
 
-	$(".button_slider a").click(function(){
-		event.preventDefault();
-		// alert ("Work")
-	});
+	// $(".button_slider a").click(function(){
+	// 	event.preventDefault();
+	// 	// alert ("Work")
+	// });
 
 	$(".work_menu_wrap a").click(function(){
 		event.preventDefault();
