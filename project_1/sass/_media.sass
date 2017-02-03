@@ -1,0 +1,239 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.main-mnu 
+		display: none
+		min-width: 295px
+		float: right
+		text-align: center
+		background-color: rgba(28,36,44, 1)
+		font-size: em(18px)
+		margin-top: 10px
+		position: absolute
+		right: 15px
+		z-index: 2
+		ul 
+			li 
+				display: block
+				line-height: 0
+				padding: 0
+			a
+				display: block
+				line-height: 48px
+				padding: 0 20px
+				transition: all .5s ease
+				&:hover
+					background-color: rgba(52,67,84, 1)
+	.phone 
+		padding-right: 65px
+
+	.section-content
+		.s1-bottom-triangle
+			background-size: cover
+
+	.section-3
+		.s3-content
+			background-size: contain
+		.s3-info-item
+			h4
+				font-size: em(18px)
+			p 
+				font-size: em(14px)
+
+	.section-8
+		.section-head
+			h2
+				&::before
+					left: 13.5%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header-left 
+		h1
+			margin-top: 0
+			margin-bottom: 20px
+
+	.header-left
+		margin-bottom: 40px
+
+	.info-item
+		max-width: 180px
+		margin-top: 60px
+		h4
+			font-size: em(16px)
+	
+	.info-item-wrap:nth-child(2)
+	.info-item
+		margin-top: 20px
+
+	.section-2
+		.s2-content
+			.s2-item
+				.s2-item-icon
+					img
+						width: 50px
+						min-height: 80px
+				a 
+					font-size: em(10px)
+			
+
+	.section-3
+		.s3-content
+			background-position: 45% 2%
+			background-size: 90%
+			.s3-info-item
+				max-width: 200px
+				margin-top: 70px
+	
+
+
+	.s3-item-wrap-head:nth-child(2)
+		.s3-info-item
+			margin-top: 0px
+
+	.s3-item-wrap-bottom:nth-child(2)
+		.s3-info-item
+			margin-top: 150px
+
+	.cards
+		.card
+			margin-bottom: 60px
+
+	/*Section #5*/
+	.triangle-container
+		.tc-item
+			margin-left: 0
+
+	.section-8
+		.section-head
+			h2
+				&::before
+					left: 11.5%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+	.info-item
+		margin-top: 0
+		max-width: 100%
+		text-align: center
+
+	.section-3
+		.s3-content
+			background-image: none
+			text-align: center
+			.s3-info-item
+				max-width: 100%
+				text-align: center
+				margin-top: 60px
+			h4 
+				margin-bottom: 0
+				font-size: em(22px)
+
+	.slider
+		.owl-controls 
+			.owl-nav
+				display: none
+
+	.section-8
+		.section-head
+			h2
+				&::before
+					left: 19%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.btn 
+		width: 100%
+		font-size: 1em
+		font-family: "PFCentroSlabProBold", $helvetica
+	
+
+	.phone-wrap
+		.phone
+			font-size: em(18px)
+			line-height: 34px
+			padding-right: 50px
+		.toggle-mnu
+			line-height: 34px
+			margin-top: 15px
+
+	.logo
+		img 
+			width: 70px
+
+	.top-line
+		padding-top: 20px
+		min-height: 100px
+
+	.header-left
+		 h1 
+			font-size: em(20px)
+
+	.section-8
+		.section-head
+			h2
+				&::before
+					left: 29%
+
+	#callback
+		margin: 5px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.main-mnu
+		display: block !important
+
