@@ -8,7 +8,8 @@ $output-bourbon-deprecation-warnings: false //Ждём обновления node
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
+	.burger-menu
+		right: 5%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -23,7 +24,21 @@ $output-bourbon-deprecation-warnings: false //Ждём обновления node
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	// __________________________________________________Burger-menu
+	[class^="line-"]
+	.burger-menu
+		padding: 0
+		background: none
+		border: none
+		&:hover
+			background: none
 
+	.logo-container
+		.svg-logo-1
+			width: 60px
+			height: 60px
+		.svg-logo-2
+			display: none
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -55,4 +70,3 @@ $output-bourbon-deprecation-warnings: false //Ждём обновления node
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
-
