@@ -4,7 +4,7 @@ $(function() {
 		verticalCentered : true,
 		scrollingSpeed: 700,
 		menu: "main-menu",
-		anchors: ["project-1", "project-2", "project-3"],
+		anchors: ["project-1", "project-2", "project-3", "project-4"],
 		sectionsColor: [],
 		css3: true,
 		paddingTop: 0,
