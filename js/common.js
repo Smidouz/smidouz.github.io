@@ -1,34 +1,38 @@
 $(function() {
 
-	$('.multiscroll').multiscroll({
-		verticalCentered : true,
-		scrollingSpeed: 700,
-		menu: "main-menu",
-		anchors: ["project-1", "project-2", "project-3", "project-4","project-5"],
+	$('#pagepiling').pagepiling({
+		menu: null,
+		direction: 'vertical',
+		verticalCentered: true,
 		sectionsColor: [],
+		anchors: [],
+		scrollingSpeed: 300,
+		easing: 'swing',
+		loopBottom: false,
+		loopTop: false,
 		css3: true,
-		paddingTop: 0,
-		paddingBottom: 0,
+		// navigation: {
+		// 	'textColor': '#000',
+		// 	'bulletsColor': '#000',
+		// 	'position': 'right',
+		// 	'tooltips': ['section1', 'section2', 'section3', 'section4']
+		// },
+		navigation: false,
+		normalScrollElements: null,
+		normalScrollElementTouchThreshold: 5,
+		touchSensitivity: 5,
+		keyboardScrolling: true,
+		sectionSelector: '.section',
+		animateAnchor: false,
+
+		//events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
 	});
 
 });
 
-//____________________________________________________ Script Window Height  & Resize
-$(document).ready(function(){
 
-	function heightDetect() {
-		$(".main_head").css("height", $(window).height());
-	};
-	heightDetect();
-	$(window).resize(function(){
-		heightDetect();
-	});
 
-});
-
-//_____________________________________________________________ jQoery Page Preload
-$(window).load(function() { 
-	$(".loader_inner").fadeOut(); 
-	$(".loader").delay(600).fadeOut("slow"); 
-});
 
