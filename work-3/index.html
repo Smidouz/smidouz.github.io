@@ -118,21 +118,23 @@
 	<!-- ===END HEADER=== -->
 	<!-- === SWIPER SLIDER === -->
 	<!-- Swiper-container -->
-	<div class="swiper-slider" id="s-home">
+	<div class="swiper-slider swiper-container" id="s-home">
 		<!-- Swiper-wrapper -->
 		<div class="swiper-wrapper">
 			<!-- Slide #1 -->
 			<div class="swiper-slide" style="background: url(img/swiper-slide-img/03.jpg);">
-				<div class="swiper-slide__content">
-					<h2 class="swiper-slide__content-title">Заголово первого слайда <br>Если больше текста</h2>
-					<a href="mailto:nashapochta@gmail.com" class="swiper-slide__content-btn btn">Заказать</a>
+				<div class="swiper-slide__content container">
+					<h2 class="swiper-slide__content-title">Создание и продвижение сайтов!</h2>
+					<p class="swiper-slide__content-desc">Мы готовы сделать целевую страницу и поднять ваши продажи на 15% уже через 3 недели после запуска рекламы!</p>
+					<a href="mailto:webenny@webenny.com" class="swiper-slide__content-btn btn">Заказать</a>
 				</div>
 			</div>
 			<!-- Slide #2 -->
 			<div class="swiper-slide" style="background: url(img/swiper-slide-img/04.jpg);">
-				<div class="swiper-slide__content">
-					<h2 class="swiper-slide__content-title">Заголово вторго слайда <br>Если больше текста</h2>
-					<a href="mailto:nashapochta@gmail.com" class="swiper-slide__content-btn btn">Заказать</a>
+				<div class="swiper-slide__content container">
+					<h2 class="swiper-slide__content-title">За 2 года мы создали более 100 проектов</h2>
+					<p class="swiper-slide__content-desc">Наши клиенты – компании малого и среднего бизнеса всех сфер деятельности, интернет-магазины и различные проекты электронной коммерции, порталы и сервисы как в Украине, так и далеко за ее пределами.</p>
+					<a href="mailto:webenny@webenny.com" class="swiper-slide__content-btn btn">Заказать</a>
 				</div>
 			</div>
 		</div>
@@ -142,7 +144,7 @@
 		<div class="swiper-slider__button-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
 		<!-- End Navigation Buttons -->
 		<!-- Button Learn More -->
-		<a href="#" class="swiper-slider__learn-more">
+		<a href="#s-portfolio" class="swiper-slider__learn-more" rel="m_PageScroll2id">
 			<i class="fa fa-angle-double-down" aria-hidden="true"></i>
 		</a>
 		<!-- End Button Learn More -->
@@ -151,272 +153,83 @@
 	<!-- SECTION PORTFOLIO -->
 	<section class="s-portfolio padding-sect" id="s-portfolio">
 		<div class="container">
-			<div class="welcome">welcome to webenny</div>
+			<div class="welcome">Добро пожаловать в студию веб дизайна WebEnny</div>
 			<h3 class="s-portfolo__title b-line">Портфолио</h3>
-			<!-- Portfolio Filter -->
-			<div class="s-portfolio__filter" id="js__filters-portfolio-gallery">
-				<div data-filter="*" class="s-portfolio__filter-item cbp-filter-item cbp-filter-item-active">all</div>
-				<div data-filter=".website" class="s-portfolio__filter-item cbp-filter-item">Web Site</div>
-				<div data-filter=".graphic" class="s-portfolio__filter-item cbp-filter-item">Design</div>
-				<div data-filter=".logo" class="s-portfolio__filter-item cbp-filter-item">Logo</div>
-			</div>
-			<!-- End Portfolio Filter -->
 			<!-- Portfolio Gallery -->
-			<div id="js__grid-portfolio-gallery" class="cbp">
+			<div class="row">
 				<!-- Item -->
-				<div class="s-portfolio__item cbp-item graphic">
+				<div class="s-portfolio__item col-md-4" style="background-image: url(img/s-portfolio/01.jpg);">
 					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/01.jpg" alt="Portfolio Image">
 					</div>
 					<div class="s-portfolio__caption--hover">
 						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
 						<p class="s-portfolio__caption-by">by WEBenny.com </p>
 						<ul class="s-portfolio__caption-links">
 							<li>
-								<a href="img/s-portfolio/01.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
+								<a href="img/s-portfolio/01.jpg" class="s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
 								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
 								</a>
 							</li>
 							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
+								
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="s-portfolio__item cbp-item website logo">
+				<div class="s-portfolio__item col-md-4" style="background-image: url(img/s-portfolio/02.jpg);">
 					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/02.jpg" alt="Portfolio Image">
 					</div>
 					<div class="s-portfolio__caption--hover">
 						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
 						<p class="s-portfolio__caption-by">by WEBenny.com </p>
 						<ul class="s-portfolio__caption-links">
 							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
+								<a href="img/s-portfolio/02.jpg" class="s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
 								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
 								</a>
 							</li>
 							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
+								
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="s-portfolio__item cbp-item graphic logo">
+				<div class="s-portfolio__item col-md-4" style="background-image: url(img/s-portfolio/03.jpg);">
 					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/03.jpg" alt="Portfolio Image">
 					</div>
 					<div class="s-portfolio__caption--hover">
 						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
 						<p class="s-portfolio__caption-by">by WEBenny.com </p>
 						<ul class="s-portfolio__caption-links">
 							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
+								<a href="img/s-portfolio/03.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
 								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
 								</a>
 							</li>
 							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
+								
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="s-portfolio__item cbp-item website graphic">
+				<div class="s-portfolio__item col-md-4"  style="background-image: url(img/s-portfolio/04.jpg);">
 					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/04.jpg" alt="Portfolio Image">
 					</div>
 					<div class="s-portfolio__caption--hover">
 						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
 						<p class="s-portfolio__caption-by">by WEBenny.com </p>
 						<ul class="s-portfolio__caption-links">
 							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
+								<a href="img/s-portfolio/04.jpg" class="s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
 								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
 								</a>
 							</li>
 							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
+								
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div class="s-portfolio__item cbp-item logo wbsite">
-					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/05.jpg" alt="Portfolio Image">
-					</div>
-					<div class="s-portfolio__caption--hover">
-						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
-						<p class="s-portfolio__caption-by">by WEBenny.com </p>
-						<ul class="s-portfolio__caption-links">
-							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
-								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="s-portfolio__item cbp-item logo graphic">
-					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/06.jpg" alt="Portfolio Image">
-					</div>
-					<div class="s-portfolio__caption--hover">
-						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
-						<p class="s-portfolio__caption-by">by WEBenny.com </p>
-						<ul class="s-portfolio__caption-links">
-							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
-								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="s-portfolio__item cbp-item website logo">
-					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/02.jpg" alt="Portfolio Image">
-					</div>
-					<div class="s-portfolio__caption--hover">
-						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
-						<p class="s-portfolio__caption-by">by WEBenny.com </p>
-						<ul class="s-portfolio__caption-links">
-							<li>
-								<a href="img/s-portfolio/07.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
-								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="s-portfolio__item cbp-item logo graphic">
-					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/08.jpg" alt="Portfolio Image">
-					</div>
-					<div class="s-portfolio__caption--hover">
-						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
-						<p class="s-portfolio__caption-by">by WEBenny.com </p>
-						<ul class="s-portfolio__caption-links">
-							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
-								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="s-portfolio__item cbp-item graphic website">
-					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/09.jpg" alt="Portfolio Image">
-					</div>
-					<div class="s-portfolio__caption--hover">
-						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
-						<p class="s-portfolio__caption-by">by WEBenny.com </p>
-						<ul class="s-portfolio__caption-links">
-							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
-								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="s-portfolio__item cbp-item website graphic">
-					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/10.jpg" alt="Portfolio Image">
-					</div>
-					<div class="s-portfolio__caption--hover">
-						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
-						<p class="s-portfolio__caption-by">by WEBenny.com </p>
-						<ul class="s-portfolio__caption-links">
-							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
-								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="s-portfolio__item cbp-item logo website">
-					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/11.jpg" alt="Portfolio Image">
-					</div>
-					<div class="s-portfolio__caption--hover">
-						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
-						<p class="s-portfolio__caption-by">by WEBenny.com </p>
-						<ul class="s-portfolio__caption-links">
-							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
-								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="s-portfolio__item cbp-item website logo">
-					<div class="s-portfolio__img--effect">
-						<img src="img/s-portfolio/12.jpg" alt="Portfolio Image">
-					</div>
-					<div class="s-portfolio__caption--hover">
-						<h4 class="s-portfolio__caption-title">Заголовок работы</h4>
-						<p class="s-portfolio__caption-by">by WEBenny.com </p>
-						<ul class="s-portfolio__caption-links">
-							<li>
-								<a href="img/s-portfolio/02.jpg" class="cbp-lightbox s-portfolio__caption-link" data-title="Заголовок работы <br/> by WEBenny.com ">
-								<i class="fa fa-arrows-alt" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="s-portfolio__caption-link">
-									<i class="fa fa-link" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				
+				</div>		
 			<!-- End Item -->
 		</div>
 				<!-- End Portfolio Gallery -->
@@ -427,54 +240,160 @@
 	<!-- Paralax Section -->
 	<section class="js_paralax-window paralax-sect" style="background: url(img/swiper-slide-img/04.jpg) 50% 0 no-repeat fixed;">
 		<div class="paralax-sect__content">
-			<h2 class="paralax-sect__content-title">Сдесь можно что-то написать</h2>
-			<a href="mailto:nashapochta@gmail.com" class="paralax-sect__content-btn btn">Заказать</a> 
+			<h2 class="paralax-sect__content-title">МЫ СДЕЛАЕМ ВАШ САЙТ ЛУЧШИМ В ВАШЕЙ НИШЕ</h2>
+			<a href="https://vk.com/webenny" class="paralax-sect__content-btn btn">Заказать</a> 
 		</div>
 	</section>
 	<!-- End Paralax Section -->
 	<section class="s-price padding-sect" id="s-price">
 		<div class="container">
-			<h3 class="s-price__title b-line ">Услуги и цены</h3>
-			<div class="row">
-				<div class="col-sm-6">
-					<h5 class="s-price__list-title">Заголовок</h5>
-					<ul class="s-price__list">
-						<li class="s-price__list-item">Первый пункт</li>
-						<li class="s-price__list-item">Второй пункт</li>
-						<li class="s-price__list-item">Третий пункт</li>
-						<li class="s-price__list-item">Четвертый пункт</li>
-						<li class="s-price__list-item">Пятый пункт</li>
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<h5 class="s-price__list-title">Заголовок</h5>
-					<ul class="s-price__list">
-						<li class="s-price__list-item">Первый пункт</li>
-						<li class="s-price__list-item">Второй пункт</li>
-						<li class="s-price__list-item">Третий пункт</li>
-						<li class="s-price__list-item">Четвертый пункт</li>
-						<li class="s-price__list-item">Пятый пункт</li>
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<h5 class="s-price__list-title">Заголовок</h5>
-					<ul class="s-price__list">
-						<li class="s-price__list-item">Первый пункт</li>
-						<li class="s-price__list-item">Второй пункт</li>
-						<li class="s-price__list-item">Третий пункт</li>
-						<li class="s-price__list-item">Четвертый пункт</li>
-						<li class="s-price__list-item">Пятый пункт</li>
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<h5 class="s-price__list-title">Заголовок</h5>
-					<ul class="s-price__list">
-						<li class="s-price__list-item">Первый пункт</li>
-						<li class="s-price__list-item">Второй пункт</li>
-						<li class="s-price__list-item">Третий пункт</li>
-						<li class="s-price__list-item">Четвертый пункт</li>
-						<li class="s-price__list-item">Пятый пункт</li>
-					</ul>
+			<h3 class="s-price__title b-line">Услуги и ценны</h3>
+			<div class="textwidget">
+				<div class="service-group">
+					<div class="service-title">1. Проект под ключ <span>(Полный набор услуг, включающих в себя разработку .PSD-макета, вёрстку и адаптацию под вашу CMS)</span></div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Сайт-визитка</div> 
+						<div class="service-time">от 1 недели</div>
+						<div class="service-price">от 150 $ / ~ 10 000 ₽</div> 
+					</div>
+					<div class="service-row"> 
+						<div class="service-name"> — Лендинг</div> 
+						<div class="service-time">от 1 недели</div> 
+						<div class="service-price">от 200 $ / ~ 12 500 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Интернет-магазин</div> 
+						<div class="service-time">от 2 недель</div> 
+						<div class="service-price">от 400 $ / ~ 25 000 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Персональный блог</div> 
+						<div class="service-time">от 1 недели</div> 
+						<div class="service-price">от 150 $ / ~ 10 000 ₽</div> 
+					</div> 
+				</div> 
+				<div class="service-group"> 
+					<div class="service-title">2. Дизайн сайта <span>(.PSD-макет)</span></div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Дизайн сайта</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 125 $ / ~ 8 000 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Дизайн промо-страницы</div> 
+						<div class="service-time">от 3-х дней</div>
+						<div class="service-price">от 75 $ / ~ 5 000 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Дизайн форума</div> 
+						<div class="service-time">от 3-х дней</div>
+						<div class="service-price">от 100 $ / ~ 6 500 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Дизайн блога</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 100 $ / ~ 6 500 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Дизайн лендинга</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 100 $ / ~ 6 500 ₽</div> 
+					</div> 
+				</div> 
+				<div class="service-group"> 
+					<div class="service-title">3. Вёрстка <span>(html/css)</span></div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Верстка .PSD макета html/css</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 75 $ / ~ 5 000 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Верстка .PSD макета под CMS</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 100 $ / ~ 6 500 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Адаптация HTML-шаблона под CMS</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 75 $ / ~ 5 000 ₽</div> 
+					</div> 
+				</div> 
+				<div class="service-group"> 
+					<div class="service-title">4. Анимация</div> 
+					<div class="service-row">
+						<div class="service-name"> — HTML5 видеофоны и шапки для сайта</div> 
+						<div class="service-time">от 2-х дней</div> 
+						<div class="service-price">от 40 $ / ~ 2 500 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Трейлеры &amp; тизеры (с озвучкой)</div> 
+						<div class="service-time">от 5-х дней</div> 
+						<div class="service-price">от 150 $ / ~ 10 000 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Прероллы (CS:GO и т.д.)</div> 
+						<div class="service-time">от 10-ти дней</div> 
+						<div class="service-price">от 225 $ / ~ 15 000 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Бизнес презентации</div> 
+						<div class="service-time">от 10-ти дней</div> 
+						<div class="service-price">от 225 $ / ~ 15 000 ₽</div> 
+					</div> 
+				</div> 
+				<div class="service-group"> 
+					<div class="service-title">5. Логотипы и полиграфия</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Разработка логотипа</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 50 $ / ~ 3 000 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Листовки, афиши</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 20 $ / ~ 1 250 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Оформление визиток</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 20 $ / ~ 1 250 ₽</div> 
+					</div> 
+				</div> 
+				<div class="service-group"> 
+					<div class="service-title">6. Баннерная реклама <span>(Баннеры)</span></div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Статический баннер</div> 
+						<div class="service-time">от 1-го дня</div> 
+						<div class="service-price">от 2 $ / ~ 150 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Анимированный баннер</div> 
+						<div class="service-time">от 1-го дня</div> 
+						<div class="service-price">от 3 $ / ~ 200 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Баннерные обои</div> 
+						<div class="service-time">от 1-го дня</div> 
+						<div class="service-price">от 10 $ / ~ 650 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Брендинг</div> 
+						<div class="service-time">от 3-х дней</div> 
+						<div class="service-price">от 50 $ / ~ 3 000 ₽</div> 
+					</div> 
+					<div class="service-row"> 
+						<div class="service-name"> — Оформление страницы VK, Facebook, Youtube</div> 
+						<div class="service-time">от 1-го дня</div> 
+						<div class="service-price">от 15 $ / ~ 900 ₽</div> 
+					</div>
+				</div> 
+				<div class="service-group">
+					<div class="service-title">7. Cоздание мобильных приложений</div>
+					<div class="service-row">
+						<div class="service-name"> — Cоздание мобильных приложений под iOS/Android</div> 
+						<div class="service-time">от 1-ой недели</div> 
+						<div class="service-price">от 300$</div> 
+					</div>
 				</div>
 			</div>
 		</div>
@@ -482,8 +401,8 @@
 	<!-- Paralax Section -->
 	<section class="js_paralax-window paralax-sect" style="background: url(img/swiper-slide-img/01.jpg) 50% 0 no-repeat fixed;">
 		<div class="paralax-sect__content">
-			<h2 class="paralax-sect__content-title">Еще один заголовок</h2>
-			<a href="mailto:nashapochta@gmail.com" class="paralax-sect__content-btn btn">Заказать</a>
+			<h2 class="paralax-sect__content-title">МЫ ДЕЛАЕМ ПО-НАСТОЯЩЕМУ КРЕАТИВНЫЕ САЙТЫ</h2>
+			<a href="https://vk.com/webenny" class="paralax-sect__content-btn btn">Заказать</a>
 		</div>
 	</section>
 	<!-- End Paralax Section -->
@@ -494,31 +413,31 @@
 			<!-- Contact Items -->
 			<div class="row">
 				<div class="col-md-4">
-					<div class="s-contact__item">
+					<a  href="mailto:webenny@webenny.com" class="s-contact__item">
 						<div class="s-contact__item-icon">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 						</div>
 						<h4 class="s-contact__item-title">Email</h4>
-						<p class="s-contact__item-desc">nashapochta@pochta.com</p>
-					</div>
+						<p class="s-contact__item-desc">webenny@webenny.com</p>
+					</a>
 				</div>
 				<div class="col-md-4">
-					<div class="s-contact__item">
-						<div class="s-contact__item-icon">
-							<i class="fa fa-skype" aria-hidden="true"></i>
-						</div>
-						<h4 class="s-contact__item-title">VK</h4>
-						<p class="s-contact__item-desc">https://vk.com/shumniyshow</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="s-contact__item">
+					<a href="https://vk.com/webenny" class="s-contact__item">
 						<div class="s-contact__item-icon">
 							<i class="fa fa-vk" aria-hidden="true"></i>
 						</div>
+						<h4 class="s-contact__item-title">VK</h4>
+						<p class="s-contact__item-desc">https://vk.com/webenny</p>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="skype:webenny.com?chat" class="s-contact__item">
+						<div class="s-contact__item-icon">
+							<i class="fa fa-skype" aria-hidden="true"></i>
+						</div>
 						<h4 class="s-contact__item-title">Skype</h4>
-						<p class="s-contact__item-desc">nash_skype</p>
-					</div>
+						<p class="s-contact__item-desc">webenny.com</p>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -530,11 +449,14 @@
 			<h3 class="b-line s-about__title">О Студии</h3>
 			<div class="row">
 				<div class="col-xs-12">
-					<p class="s-about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias necessitatibus animi sint quod facilis laborum modi consequatur neque ullam error repudiandae voluptatibus inventore sed odio, earum itaque nisi velit rerum ad excepturi nesciunt mollitia nihil cumque aperiam assumenda. Itaque eveniet ex quia beatae, nihil. Libero enim placeat ullam deserunt rem reiciendis asperiores porro, officia at sit natus dolor magni non.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam mollitia amet fugit, placeat nisi modi qui sint dolore reiciendis! Consectetur illo voluptatibus saepe libero architecto facere, similique perferendis ut ipsa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias necessitatibus animi sint quod facilis laborum modi consequatur neque ullam error repudiandae voluptatibus inventore sed odio, earum itaque nisi velit rerum ad excepturi nesciunt mollitia nihil cumque aperiam assumenda. Itaque eveniet ex quia beatae, nihil. Libero enim placeat ullam deserunt rem reiciendis asperiores porro, officia at sit natus dolor magni non.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam mollitia amet fugit, placeat nisi modi qui sint dolore reiciendis! Consectetur illo voluptatibus saepe libero architecto facere, similique perferendis ut ipsa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias necessitatibus animi sint quod facilis laborum modi consequatur neque ullam error repudiandae voluptatibus inventore sed odio, earum itaque nisi velit rerum ad excepturi nesciunt mollitia nihil cumque aperiam assumenda. Itaque eveniet ex quia beatae, nihil. Libero enim placeat ullam deserunt rem reiciendis asperiores porro, officia at sit natus dolor magni non.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam mollitia amet fugit, placeat nisi modi qui sint dolore reiciendis! Consectetur illo voluptatibus saepe libero architecto facere, similique perferendis ut ipsa.</p>
-				</div>
+					<p class="s-about__desc">WebEnny наша жемчужина и главная ценность – наши сотрудники. Это молодые дизайнеры, прошедшие огонь, воду и медные трубы в области веб-разработки. В основе любого правильного решения всегда стоит качественный, современный и дружелюбный интерфейс. Мы работаем не только на Украинский рынок, но и на СНГ, а также для Запада. За время нашей работы, наши дизайнеры научились создавать такие вещи, за которые не жаль платить, а конечный пользователь будет отдавать свое предпочтение в виде Вашей выручки.
+Наши программисты – это вторая часть нашей студии. Это люди, которые умеют быстро, четко и правильно выполнить задание, и всегда идут в ногу со временем, постоянно пополняя свой репертуар новейшими технологиями в стихии Вэба.
+И, конечно, для Вас всегда дружелюбные, всегда безотказные – наши проджект-менеджеры, которые всегда расскажут, объяснят и помогут сформулировать Вашу идею дабы воплотить ее в жизнь максимально эффективным способом.
 			</div>
 		</div>
 	</section>
+
+	<a href="#s-home" class="btn-scroll-to-top" rel="m_PageScroll2id"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
